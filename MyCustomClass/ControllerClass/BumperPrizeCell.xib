@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BumperPrizeCell" id="gTV-IL-0wX" customClass="BumperPrizeCell">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="601"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="601"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activa-1" translatesAutoresizingMaskIntoConstraints="NO" id="7LR-x0-rm2">
+                        <rect key="frame" x="0.0" y="10" width="374" height="601"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN6-hZ-Tng">
+                        <rect key="frame" x="28" y="250.5" width="318" height="120"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7LR-x0-rm2" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="6sl-0F-Us0"/>
+                <constraint firstItem="7LR-x0-rm2" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="LzS-u5-olB"/>
+                <constraint firstItem="UN6-hZ-Tng" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.85" id="O1c-GK-kex"/>
+                <constraint firstItem="UN6-hZ-Tng" firstAttribute="centerY" secondItem="SEy-5g-ep8" secondAttribute="centerY" id="ad6-AY-tXJ"/>
+                <constraint firstItem="UN6-hZ-Tng" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="dsH-GK-SzU"/>
+                <constraint firstItem="7LR-x0-rm2" firstAttribute="centerY" secondItem="SEy-5g-ep8" secondAttribute="centerY" id="kM3-dZ-DPo"/>
+                <constraint firstItem="7LR-x0-rm2" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="ndv-Mi-F5v"/>
+                <constraint firstItem="UN6-hZ-Tng" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.2" id="xc3-0P-LfX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="104" height="50"/>
+            <connections>
+                <outlet property="prizeImgView" destination="7LR-x0-rm2" id="ldu-bR-oUN"/>
+                <outlet property="prizeLbl" destination="UN6-hZ-Tng" id="77x-w6-ZFl"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="119"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="activa-1" width="750" height="1334"/>
+    </resources>
+</document>
